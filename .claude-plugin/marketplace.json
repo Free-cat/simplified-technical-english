@@ -1,0 +1,17 @@
+{
+  "name": "simplified-technical-english",
+  "owner": { "name": "Free-cat" },
+  "metadata": {
+    "description": "Write, check, and edit technical documents in ASD-STE100 Simplified Technical English (unofficial).",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "ste100",
+      "description": "Writes, checks, and edits documents in ASD-STE100 Simplified Technical English. Unofficial.",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/ste100"]
+    }
+  ]
+}
