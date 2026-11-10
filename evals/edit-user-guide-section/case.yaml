@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: edit-user-guide-section
+expected_outcome: |
+  The section rewritten in STE with all technical content kept, safety text moved before the related steps, the shutdown sentence divided into steps, plus a short change summary.
+context:
+  scaffold_script: place-files.sh
