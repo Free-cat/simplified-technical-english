@@ -1,0 +1,24 @@
+# Words that are not approved in the general sense but are technical in a specific sense.
+# Columns: word | general sense | specific sense
+enter | not approved in the sense 'go into'; write 'go into' | technical verb for input ('Enter your password.')
+press | not approved; write 'push' | technical verb for a key ('Press Enter.')
+enable | not approved in the general sense; write LET or CAN | technical verb for a user-interface setting ('Enable the option.')
+disable | not approved in the general sense | technical verb for a user-interface setting ('Disable the option.')
+validate | not approved; write 'make sure that ... is correct' | technical verb for an application function ('Validate the form.')
+navigate | not approved; write 'go' | technical verb for the user interface ('Navigate to the page.'); 'Go to the page' is better
+delete | not approved in the general sense; write 'remove' or 'discard' | technical verb for a record ('Delete the record.')
+save | not approved in the sense 'keep'; write 'keep' | technical verb for a file ('Save the file.')
+detect | not approved; write 'find' | technical verb for an equipment function ('The scanner detects metal objects.')
+load | not approved in the sense 'install'; write 'install' | technical verb for a system operation ('Load the configuration.')
+deploy | approved only in the sense 'move a part out of its stowed position' | technical verb for software ('Deploy the release.')
+run | not approved in the sense 'operate'; write 'operate' | technical verb for a script or a command ('Run the script.')
+restore | not approved in the sense 'put back'; write 'install again' | technical verb for a system operation ('Restore the database from the backup.')
+check | not approved as a verb; write 'make sure' or 'do a check of' | part of a name ('check valve'); CHECK as a noun is approved
+test | not approved as a verb; write 'do a test of' | part of a technical noun ('test rig')
+close | not approved as an adjective or adverb; write 'near' | approved verb ('Close the valve.')
+main | not approved; write 'primary' | only in a name ('main landing gear', 'main menu')
+backup | not approved in the general sense ('a person as backup') | IT term ('backup file')
+oil | not permitted as a verb; write 'apply oil to' | technical noun
+grease | not permitted as a verb; write 'apply grease to' | technical noun
+clamp | not permitted as a verb; write 'put a clamp on' | technical noun
+wire | not permitted as a verb | technical noun

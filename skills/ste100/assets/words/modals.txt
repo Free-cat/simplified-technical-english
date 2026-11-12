@@ -1,0 +1,8 @@
+# Modal verbs that are not approved. Columns: word | alternative
+should | MUST (for an obligation, or write the command); RECOMMEND (advice); IF (= if)
+shall | MUST
+ought | MUST
+may | CAN (permission); POSSIBLY (possibility)
+might | CAN; POSSIBLY
+could | CAN
+would | CAN; or rewrite in the simple present or simple future

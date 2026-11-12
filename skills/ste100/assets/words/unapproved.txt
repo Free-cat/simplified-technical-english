@@ -1,0 +1,248 @@
+# General word list: words that are NOT approved, with approved alternatives.
+# A working subset of ASD-STE100 Issue 9 (not the official dictionary).
+# One word per line. Columns, separated by " | ":
+#   word | section | pos | alternative | flags | note | example
+#   section: verbs, connecting, adjectives (the dictionary table the word is in)
+#   pos: the part of speech that is not approved (verb, adjective), or -
+#   alternative: approved word(s). "-" is not used: every line has an alternative.
+#   flags (comma list, or -):
+#     check   the checker reports the word
+#     soft    the checker reports it as info only (often correct in a noun use)
+#     auto    safe for "ste.py fix --write" (the alternative never changes meaning
+#             or part of speech in the usual sentence; see SKILL.md)
+#     number  reported only when a number follows
+#   note: - or the sense the word has in the unapproved use
+#   example: - or an STE example sentence
+# Words in a group share the alternative and the example; the dictionary tables
+# are generated from this file (tests/build_references.py).
+#
+verify | verbs | - | MAKE SURE | check | - | Make sure that the pressure is 30 psi.
+ensure | verbs | - | MAKE SURE | check | - | Make sure that the pressure is 30 psi.
+confirm | verbs | - | MAKE SURE | check | - | Make sure that the pressure is 30 psi.
+ascertain | verbs | - | MAKE SURE | check | - | Make sure that the pressure is 30 psi.
+check | verbs | verb | MAKE SURE; DO A CHECK; EXAMINE (CHECK is a noun) | check,soft | - | -
+validate | verbs | - | MAKE SURE; DO A CHECK | check,soft | - | -
+inspect | verbs | - | EXAMINE; DO AN INSPECTION | check | - | Examine the seal for damage.
+test | verbs | verb | DO A TEST (TEST is a noun) | check,soft | - | Do a leak test of the fuel line.
+perform | verbs | - | DO | check | - | Do the functional test.
+conduct | verbs | - | DO | check | - | Do the functional test.
+execute | verbs | - | DO | check | - | Do the functional test.
+accomplish | verbs | - | DO | check | - | Do the functional test.
+carry out | verbs | - | DO | check | - | Do the functional test.
+utilize | verbs | - | USE | check,auto | - | Use a soft cloth.
+utilise | verbs | - | USE | check,auto | - | Use a soft cloth.
+employ | verbs | - | USE | check | - | Use a soft cloth.
+leverage | verbs | - | USE | check | - | Use a soft cloth.
+make use of | verbs | - | USE | check | - | Use a soft cloth.
+require | verbs | - | BE NECESSARY; MUST | check,soft | - | A second person is necessary for this task.
+need | verbs | verb | BE NECESSARY; MUST | check,soft | - | A second person is necessary for this task.
+allow | verbs | - | LET; CAN | check | - | Let the adhesive dry.
+permit | verbs | - | LET; CAN | check | - | Let the adhesive dry.
+enable | verbs | verb | LET; CAN (ENABLE is a technical verb for user-interface settings) | check,soft | - | -
+obtain | verbs | - | GET | check,auto | - | Get the access code from the supervisor.
+acquire | verbs | - | GET | check,auto | - | Get the access code from the supervisor.
+retrieve | verbs | - | GET | check | - | Get the access code from the supervisor.
+provide | verbs | - | GIVE; SUPPLY | check | - | The pump supplies fuel to the engine.
+furnish | verbs | - | GIVE; SUPPLY | check | - | The pump supplies fuel to the engine.
+deliver | verbs | verb | GIVE; SUPPLY | - | - | The pump supplies fuel to the engine.
+insert | verbs | - | PUT | check | - | Put the washer on the bolt.
+place | verbs | verb | PUT | - | - | Put the washer on the bolt.
+position | verbs | verb | PUT | - | - | Put the washer on the bolt.
+lay | verbs | verb | PUT | - | - | Put the washer on the bolt.
+depress | verbs | - | PUSH | check | - | Push the RESET button.
+press | verbs | verb | PUSH (PRESS is a technical verb for a key in computer text) | check,soft | - | Push the RESET button.
+rotate | verbs | - | TURN | check | - | Turn the knob clockwise.
+spin | verbs | - | TURN | - | - | Turn the knob clockwise.
+locate | verbs | - | FIND | check | - | Find the cause of the leak.
+discover | verbs | - | FIND | check | - | Find the cause of the leak.
+detect | verbs | - | FIND | check,soft | - | Find the cause of the leak.
+indicate | verbs | - | SHOW | check | - | The gauge shows the pressure.
+exhibit | verbs | - | SHOW | check | - | The gauge shows the pressure.
+reveal | verbs | - | SHOW | check | - | The gauge shows the pressure.
+display | verbs | verb | SHOW | - | - | The gauge shows the pressure.
+observe | verbs | - | SEE; MONITOR; OBEY (for rules) | check | - | If you see corrosion, replace the bracket.
+notice | verbs | - | SEE; MONITOR; OBEY (for rules) | check | - | If you see corrosion, replace the bracket.
+view | verbs | verb | SEE; MONITOR | - | - | If you see corrosion, replace the bracket.
+begin | verbs | - | START | check | - | Start the engine.
+commence | verbs | - | START | check,auto | - | Start the engine.
+initiate | verbs | - | START | check | - | Start the engine.
+launch | verbs | - | START | - | - | Start the engine.
+end | verbs | verb | STOP | - | - | Stop the pump.
+terminate | verbs | - | STOP | check | - | Stop the pump.
+cease | verbs | - | STOP | check | - | Stop the pump.
+halt | verbs | - | STOP | check | - | Stop the pump.
+shut down | verbs | - | STOP | check | - | Stop the pump.
+finish | verbs | - | COMPLETE | check | - | Complete the installation.
+finalize | verbs | - | COMPLETE | check | - | Complete the installation.
+reduce | verbs | - | DECREASE | check | - | Decrease the pressure to 10 psi.
+lessen | verbs | - | DECREASE | check | - | Decrease the pressure to 10 psi.
+diminish | verbs | - | DECREASE | check | - | Decrease the pressure to 10 psi.
+elevate | verbs | - | LIFT; INCREASE | check | - | Lift the cover.
+raise | verbs | verb | LIFT; INCREASE | - | - | Lift the cover.
+alter | verbs | - | CHANGE; ADJUST | check | - | Change the filter.
+modify | verbs | - | CHANGE; ADJUST | check | - | Change the filter.
+amend | verbs | - | CHANGE; ADJUST | check | - | Change the filter.
+vary | verbs | verb | CHANGE; ADJUST | - | - | Change the filter.
+maintain | verbs | - | KEEP; HOLD | check | - | Keep the container closed.
+retain | verbs | - | KEEP; HOLD | check | - | Keep the container closed.
+preserve | verbs | - | KEEP | check | - | Keep the cables in the box until you use them.
+fasten | verbs | - | ATTACH; INSTALL | check | - | Attach the cable to the bracket.
+affix | verbs | - | ATTACH; INSTALL | check | - | Attach the cable to the bracket.
+secure | verbs | verb | ATTACH; INSTALL; SAFETY (verb: lock with wire) | - | - | Attach the cable to the bracket.
+fix | verbs | verb | ATTACH; INSTALL; SAFETY (verb: lock with wire) | - | - | Attach the cable to the bracket.
+mount | verbs | verb | ATTACH; INSTALL; SAFETY (verb: lock with wire) | - | - | Attach the cable to the bracket.
+detach | verbs | - | DISCONNECT; REMOVE | check | - | Disconnect the hose.
+unfasten | verbs | - | DISCONNECT; REMOVE | check | - | Disconnect the hose.
+separate | verbs | verb | DISCONNECT; REMOVE | - | - | Disconnect the hose.
+rectify | verbs | - | REPAIR; CORRECT | check | - | Repair the damaged insulation.
+restore | verbs | verb | REPAIR; CORRECT; INSTALL AGAIN | - | - | Repair the damaged insulation.
+substitute | verbs | - | REPLACE | check | - | Replace the seal with a new seal.
+exchange | verbs | verb | REPLACE | - | - | Replace the seal with a new seal.
+swap | verbs | - | INTERCHANGE | check | - | Interchange cables 1 and 2.
+toggle | verbs | - | SET | check | - | Set the switch to ON.
+switch | verbs | verb | SET | - | - | Set the switch to ON.
+choose | verbs | - | SELECT | check | - | Select the applicable procedure.
+pick | verbs | verb | SELECT | - | - | Select the applicable procedure.
+determine | verbs | - | FIND; CALCULATE; MAKE SURE | check | - | Calculate the total weight.
+establish | verbs | - | FIND; CALCULATE; MAKE SURE | check | - | Calculate the total weight.
+function | verbs | verb | OPERATE | - | - | The unit operates at 28 V.
+run | verbs | verb | OPERATE | - | - | The unit operates at 28 V.
+work | verbs | verb | DO WORK (WORK is a noun) | - | - | Be careful when you do work near the tank.
+damage | verbs | verb | CAUSE DAMAGE TO (DAMAGE is a noun) | - | - | Heat can cause damage to the seal.
+harm | verbs | verb | CAUSE INJURY TO | - | - | The spray can cause injury to your eyes.
+hurt | verbs | verb | CAUSE INJURY TO | - | - | The spray can cause injury to your eyes.
+leak | verbs | verb | THERE IS A LEAK (LEAK is a noun) | - | - | If there is a leak, tighten the fitting.
+fail | verbs | verb | BE UNSERVICEABLE (rewrite the sentence; FAILURE is a technical noun) | - | - | The pump is unserviceable.
+comprise | verbs | - | HAVE; INCLUDE; CONTAIN | check | - | The kit contains four seals.
+consist of | verbs | - | HAVE; INCLUDE; CONTAIN | check | - | The kit contains four seals.
+avoid | verbs | - | PREVENT; DO NOT | check | - | Do not touch the hot surface.
+attempt | verbs | - | TRY | check | - | Try to move the lever.
+repeat | verbs | - | DO ... AGAIN | check,soft | - | Do steps 3 to 5 again.
+exceed | verbs | - | BE MORE THAN | check | - | The temperature must not be more than 80 °C.
+remain | verbs | - | STAY | check | - | Stay away from the air intake.
+inform | verbs | - | TELL | check | - | Tell the supervisor.
+notify | verbs | - | TELL | check | - | Tell the supervisor.
+advise | verbs | - | TELL | check | - | Tell the supervisor.
+proceed | verbs | - | CONTINUE; GO | check | - | Continue the procedure.
+return | verbs | verb | PUT BACK; GO BACK | - | - | Put the tool back in the kit.
+dispose | verbs | - | DISCARD | check | - | Discard the used seal.
+dispose of | verbs | - | DISCARD | check | - | Discard the used seal.
+throw away | verbs | - | DISCARD | check | - | Discard the used seal.
+wipe | verbs | verb | CLEAN | - | - | Clean the surface with a dry cloth.
+wash | verbs | verb | CLEAN | - | - | Clean the surface with a dry cloth.
+rinse | verbs | verb | CLEAN | - | - | Clean the surface with a dry cloth.
+handle | verbs | verb | MOVE; HOLD; TOUCH; BE CAREFUL WITH | - | - | Be careful when you move the unit.
+in order to | connecting | - | TO | - | - | -
+so as to | connecting | - | TO | - | - | -
+prior to | connecting | - | BEFORE | - | - | -
+previous to | connecting | - | BEFORE | - | - | -
+subsequent to | connecting | - | AFTER | - | - | -
+following | connecting | - | AFTER | - | sense: after (preposition) | -
+since | connecting | - | BECAUSE; BECAUSE OF | check,soft | sense: because | -
+as | connecting | - | BECAUSE; BECAUSE OF | - | sense: because | -
+due to | connecting | - | BECAUSE OF | - | - | -
+owing to | connecting | - | BECAUSE OF | - | - | -
+though | connecting | - | BUT | check | - | -
+whereas | connecting | - | BUT | check | - | -
+however | connecting | - | BUT | check | - | -
+therefore | connecting | - | AS A RESULT; THUS | check | - | -
+hence | connecting | - | AS A RESULT; THUS | check | - | -
+consequently | connecting | - | AS A RESULT; THUS | check | - | -
+thus far | connecting | - | AS A RESULT; THUS | - | - | -
+in case | connecting | - | IF | - | - | -
+in the event that | connecting | - | IF | - | - | -
+provided that | connecting | - | IF | - | - | -
+should | connecting | - | MUST (for an obligation, or write the command); RECOMMEND (advice); IF (= if) | - | sense: if | -
+whether | connecting | - | IF | check | - | -
+upon | connecting | - | WHEN; AFTER | check | - | -
+once | connecting | - | WHEN; AFTER | - | sense: when | -
+via | connecting | - | THROUGH; WITH | check | - | -
+by means of | connecting | - | THROUGH; WITH | - | - | -
+within | connecting | - | IN; LESS THAN (for time and quantity) | check,soft | - | -
+over | connecting | - | MORE THAN (for a quantity or a limit); ABOVE; ON; ALONG (for a position) | - | - | -
+in excess of | connecting | - | MORE THAN | - | - | -
+under | connecting | - | LESS THAN (for a quantity or a limit); BELOW; IN (for a position) | - | - | -
+below | connecting | - | LESS THAN (for a quantity or a limit); BELOW; IN (for a position) | - | - | -
+the following | connecting | - | THESE; THAT FOLLOW(S) | - | - | -
+about | connecting | - | APPROXIMATELY (for a quantity); ABOUT is approved only for 'concerned with' | check,soft,number | - | -
+around | connecting | - | APPROXIMATELY (for a quantity) | - | - | -
+circa | connecting | - | APPROXIMATELY (for a quantity) | - | - | -
+per | connecting | - | FOR EACH; REFER TO (for documents) | check,soft | - | -
+as well as | connecting | - | AND; ALSO | check | - | -
+in addition to | connecting | - | AND; ALSO | check | - | -
+e.g. | connecting | - | FOR EXAMPLE | - | - | -
+i.e. | connecting | - | THAT IS | - | - | -
+etc. | connecting | - | give the full list, or "and other ..." | - | - | -
+prior | connecting | - | BEFORE | check | - | -
+former | connecting | - | BEFORE; INITIAL | - | - | -
+in accordance with | connecting | - | REFER TO; OBEY | - | - | -
+as per | connecting | - | REFER TO; OBEY | - | - | -
+currently | connecting | - | AT THIS TIME | check,auto | - | -
+presently | connecting | - | AT THIS TIME | check,auto | - | -
+now | connecting | - | AT THIS TIME | - | - | -
+at this point | connecting | - | AT THIS TIME | - | - | -
+till | connecting | - | UNTIL | check | - | -
+whilst | connecting | - | WHILE | check,auto | - | -
+furthermore | connecting | - | ALSO | check,auto | - | -
+moreover | connecting | - | ALSO | check,auto | - | -
+additionally | connecting | - | ALSO | check,auto | - | -
+appropriate | adjectives | - | CORRECT; APPLICABLE | check | - | -
+suitable | adjectives | - | CORRECT; APPLICABLE | check | - | -
+proper | adjectives | - | CORRECT | check | - | -
+right | adjectives | - | CORRECT (RIGHT is approved as 'side') | - | - | -
+properly | adjectives | - | CORRECTLY | check | - | -
+adequate | adjectives | - | SUFFICIENT | check | - | -
+enough | adjectives | - | SUFFICIENT | check | - | -
+ample | adjectives | - | SUFFICIENT | check | - | -
+essential | adjectives | - | NECESSARY; IMPORTANT | check | - | -
+crucial | adjectives | - | NECESSARY; IMPORTANT | check | - | -
+vital | adjectives | - | MANDATORY | check | - | -
+critical | adjectives | - | VERY IMPORTANT; CAREFUL (for 'a careful estimate') | - | - | -
+big | adjectives | - | LARGE | check,auto | - | -
+huge | adjectives | - | LARGE | check,auto | - | -
+sizeable | adjectives | - | LARGE | - | - | -
+tiny | adjectives | - | SMALL | check | - | -
+little | adjectives | - | SMALL | - | - | -
+minor | adjectives | - | SMALL | - | - | -
+entire | adjectives | - | ALL; FULL | check | - | -
+whole | adjectives | - | ALL; FULL | check | - | -
+numerous | adjectives | - | MANY | check,auto | - | -
+multiple | adjectives | - | MANY; SOME | check | - | -
+several | adjectives | - | SOME | check | - | -
+various | adjectives | - | DIFFERENT | check | - | -
+additional | adjectives | - | MORE; OTHER | check | - | -
+extra | adjectives | - | MORE; OTHER | check | - | -
+further | adjectives | - | MORE; OTHER | check,soft | - | -
+main | adjectives | - | PRIMARY (MAIN can be part of a technical name, for example 'main landing gear') | - | - | -
+final | adjectives | - | LAST | check,soft | - | -
+ultimate | adjectives | - | LAST | - | - | -
+close | adjectives | adjective | NEAR; ADJACENT | - | - | -
+nearby | adjectives | - | NEAR | check | - | -
+faulty | adjectives | - | DEFECTIVE; UNSERVICEABLE | check | - | -
+broken | adjectives | - | DEFECTIVE; UNSERVICEABLE; DAMAGED | check | - | -
+inoperative | adjectives | - | OFF; DOES NOT OPERATE | check | - | -
+functional | adjectives | - | SERVICEABLE; OPERATES CORRECTLY | - | - | -
+working | adjectives | - | SERVICEABLE; OPERATES CORRECTLY | - | - | -
+operative | adjectives | - | SERVICEABLE; OPERATES CORRECTLY | - | - | -
+visible | adjectives | - | 'that you can see' | - | - | -
+accessible | adjectives | - | 'that you can get access to' | - | - | -
+prone to | adjectives | - | CAN; EASILY | - | - | -
+liable to | adjectives | - | CAN; EASILY | - | - | -
+gently | adjectives | - | CAREFULLY; LIGHTLY | check | - | -
+cautiously | adjectives | - | CAREFULLY; LIGHTLY | - | - | -
+rapidly | adjectives | - | QUICKLY | check,auto | - | -
+swiftly | adjectives | - | QUICKLY | check,auto | - | -
+promptly | adjectives | - | IMMEDIATELY | check | - | -
+nearly | adjectives | - | ALMOST | check,auto | - | -
+roughly | adjectives | - | APPROXIMATELY | check,auto | - | -
+simply | adjectives | - | (delete the word) | check | - | -
+basically | adjectives | - | (delete the word) | check | - | -
+just | adjectives | - | IMMEDIATELY (time); ONLY ('Only apply light pressure'); or delete the word | check,soft | - | -
+difficult | adjectives | - | NOT EASY | - | - | -
+hard | adjectives | - | NOT EASY | - | - | -
+acceptable | adjectives | - | PERMITTED | - | - | -
+please | adjectives | - | (delete; give the command directly) | check | - | -
+robust | adjectives | - | (delete, or be specific) | check | - | -
+seamless | adjectives | - | (delete, or be specific) | check | - | -
+seamlessly | adjectives | - | (delete, or be specific) | check | - | -
+and so on | adjectives | - | give the full list | - | - | -

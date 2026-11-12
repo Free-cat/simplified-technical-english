@@ -1,0 +1,37 @@
+# Approved words with a part-of-speech or meaning trap.
+# Columns: word | approved as | not approved as | write instead
+# "-" means none.
+check | noun | verb | Do a check of / Make sure that
+test | noun | verb | Do a test of
+close | verb | adjective, adverb | near
+clear | adjective ('clear of obstructions') | verb | Remove ...; Make sure that ... is clear
+clean | verb, adjective | - | Clean the surface. The surface is clean.
+damage | noun | verb | cause damage to
+leak | noun | verb | There is a leak
+work | noun | verb | do work
+control | noun; verb (adjust, operate) | verb meaning 'check' | make sure / examine
+follow | verb (come after) | verb meaning 'obey' | obey
+hard | adjective (not easy to cut) | 'difficult' | not easy
+about | preposition (concerned with) | 'approximately' | approximately
+as | conjunction of comparison ('as ... as') | 'because', 'while' | because, while
+since | conjunction for time ('since you mixed the compound') | 'because' | because
+once | - | adverb, conjunction | one time; when
+over | - | all uses | above, on, along (position); more than (quantity)
+right | adjective (side) | 'correct' | correct
+last | adjective (final) | verb | continue for
+use | verb | noun in 'make use of' | use (verb)
+need | - | verb | be necessary
+help | verb | noun | Get medical aid. This helps to prevent corrosion.
+aid | noun | verb | Get medical aid.
+cool | adjective | verb | Let the unit become cool.
+wear | verb (become damaged by friction) | 'wear clothing' | put on, use
+see | verb (with the eyes) | 'see Table 2' | refer to
+turn | verb (move around an axis) | 'turns green' | changes to green
+activate | verb (make a function ready for operation) | - | start
+deactivate | verb (make a function not ready for operation) | - | stop
+warning | technical noun (safety signal word) | 'warn' as a verb | tell
+caution | technical noun (safety signal word) | 'warn' as a verb | tell
+function | noun | verb | operate
+safety | noun; verb (lock with wire or a pin) | - | Safety the nut with lockwire.
+monitor | verb | - | Monitor the pressure.
+refer | verb, with TO | - | Refer to Figure 3.

@@ -1,0 +1,29 @@
+# British spelling -> American spelling (rule 1.14). All entries are auto-fixable.
+# Columns: british | american
+colour | color
+centre | center
+metre | meter
+litre | liter
+fibre | fiber
+grey | gray
+aluminium | aluminum
+analyse | analyze
+organise | organize
+recognise | recognize
+minimise | minimize
+maximise | maximize
+initialise | initialize
+authorise | authorize
+licence | license
+catalogue | catalog
+programme | program
+behaviour | behavior
+labelled | labeled
+cancelled | canceled
+travelled | traveled
+tyre | tire
+vapour | vapor
+defence | defense
+customise | customize
+synchronise | synchronize
+prioritise | prioritize

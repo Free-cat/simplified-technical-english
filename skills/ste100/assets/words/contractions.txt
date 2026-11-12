@@ -1,0 +1,6 @@
+# Contractions and their expansion (rule 4.2). Columns: contraction | expansion | flags
+# flags: auto = ste.py fix --write may replace it.
+don't | do not | auto
+doesn't | does not | auto
+isn't | is not | auto
+aren't | are not | auto

@@ -1,0 +1,6 @@
+# Jargon and short forms -> preferred term (rule 1.10). Columns: jargon | preferred | domain | flags
+# domain: general, or the name of a term pack (software, mechanical). Used by ste.py fix only
+# when the domain is active. flags: auto = may be replaced by ste.py fix --write.
+prod | production environment | software | auto
+repo | repository | software | auto
+creds | credentials | software | auto

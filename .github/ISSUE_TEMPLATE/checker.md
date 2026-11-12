@@ -1,6 +1,6 @@
 ---
 name: Checker gave a wrong result
-about: ste_check.py reported correct text, or missed a violation
+about: ste.py check (or ste_check.py) reported correct text, or missed a violation
 labels: checker
 ---
 

@@ -18,7 +18,7 @@ Use the pressure selector to adjust the output pressure between 500 and 3000 psi
 WARNING: Do not use your hand to find leaks. Hydraulic fluid under pressure can penetrate the skin and cause serious injury.
 
 2. Examine the unit for leaks.
-3. Wear eye protection.
+3. Put on eye protection.
 4. Connect the pressure hose and the return hose to the ground service panel of the aircraft.
 5. Make sure that the quick-disconnect couplings are fully engaged.
 6. Open the shut-off valve.
@@ -34,5 +34,5 @@ WARNING: Do not use your hand to find leaks. Hydraulic fluid under pressure can 
 2. Push the STOP button.
 3. Close the shut-off valve.
 4. Let the residual pressure decrease for approximately 2 minutes.
-5. Wear eye protection.
+5. Put on eye protection.
 6. Disconnect the hoses.

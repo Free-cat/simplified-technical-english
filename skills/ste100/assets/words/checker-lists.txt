@@ -1,0 +1,15 @@
+# Word lists used by the checker. Format: key: value value ... (space separated)
+# Keys starting with regex_ take the whole rest of the line as one regular expression.
+# skip_before: a word followed by a given word is not reported (need to, prior to).
+noun_words: check test
+skip_before: need>to prior>to
+skip_inflected: further
+be_forms: is are was were be been being am
+have_forms: has have had having
+irregular_participles: been done made given taken seen shown known found put set sent kept held written read run built broken bent blown cut driven fallen felt got gotten gone heard left lost paid sold told thought worn drawn torn frozen chosen begun become brought bought caught come fed hidden hung led met shut spent stuck understood withdrawn wound
+state_adjectives: closed damaged installed connected disconnected attached locked unlocked engaged disengaged aligned pressurized extended retracted approved related located contaminated worn broken bent blocked energized grounded sealed required recommended permitted prohibited completed tightened loosened enabled disabled satisfied set shut stuck frozen torn cracked corroded scratched
+not_participles: need speed feed seed bleed exceed proceed indeed hundred red bed shed embed led naked wicked rugged sacred biped unused
+approved_ing: thing nothing something anything everything during ring string spring king wing bring sing sling swing cling ping bearing housing wiring opening setting warning fitting casing coating building ceiling tubing piping plating bushing fairing landing mounting packing lining marking reading rating meeting heading training drawing testing logging computing networking engineering manufacturing machining processing painting welding soldering bonding cleaning cooling heating lighting timing routing padding morning evening inning shilling sibling interesting according o-ring plumbing seating
+imperative_hints: add adjust align apply attach calculate calibrate change clean click close connect continue cut decrease delete disassemble discard disconnect do download drain dry enter examine fill find get give hold identify increase install keep let lift lock loosen lower lubricate make measure mix monitor move obey open operate prepare pull push put read record refer release remove repair replace restart run save select send set start stop tell tighten torque touch turn type unlock upload use write copy paste log deploy merge commit check verify ensure inspect test press rotate insert wait reboot create wipe allow place position perform confirm go scroll
+regex_bad_safety_starts: ^(care|caution|attention|extreme|it is|there is|be aware|note that|failure)\b
+regex_inclusive_terms: \b(he|she|his|her|him|manpower|mankind|man-hours?|chairman|foreman)\b

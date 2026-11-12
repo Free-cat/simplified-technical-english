@@ -1,0 +1,59 @@
+# Fixed phrases (literal, whole words, any case) and phrasal verbs.
+# Columns: phrase | kind | rule | severity | alternative | flags
+#   kind: fixed (a phrase that the checker reports as "phrase" -> alternative)
+#         phrasal (a two-word verb, reported as rule 9.3 when used with its particle)
+#   severity: error, warning or info
+#   flags: auto = ste.py fix --write may replace the phrase (meaning and part of speech
+#          do not change in the usual sentence); - = report only
+in order to | fixed | 1.1 | error | TO | auto
+so as to | fixed | 1.1 | error | TO | auto
+prior to | fixed | 1.1 | error | BEFORE | auto
+subsequent to | fixed | 1.1 | error | AFTER | auto
+due to | fixed | 1.1 | error | BECAUSE OF | -
+owing to | fixed | 1.1 | error | BECAUSE OF | -
+in the event that | fixed | 1.1 | error | IF | auto
+in the event of | fixed | 1.1 | error | IF | -
+provided that | fixed | 1.1 | error | IF | auto
+as well as | fixed | 1.1 | error | AND / ALSO | -
+by means of | fixed | 1.1 | error | WITH / THROUGH | -
+in accordance with | fixed | 1.1 | error | REFER TO / OBEY | -
+as per | fixed | 1.1 | error | REFER TO / OBEY | -
+in excess of | fixed | 1.1 | error | MORE THAN | auto
+at this point | fixed | 1.1 | warning | AT THIS TIME | auto
+make use of | fixed | 1.1 | error | USE | auto
+set up | phrasal | 9.3 | warning | PREPARE / INSTALL | -
+carry out | phrasal | 9.3 | warning | DO | -
+find out | phrasal | 9.3 | warning | FIND | -
+figure out | phrasal | 9.3 | warning | FIND / CALCULATE | -
+go on | phrasal | 9.3 | warning | CONTINUE | -
+put out | phrasal | 9.3 | warning | EXTINGUISH / STOP | -
+shut down | phrasal | 9.3 | warning | STOP | -
+shut off | phrasal | 9.3 | warning | STOP / CLOSE | -
+switch on | phrasal | 9.3 | warning | SET TO ON / START | -
+switch off | phrasal | 9.3 | warning | SET TO OFF / STOP | -
+turn on | phrasal | 9.3 | warning | SET TO ON / START | -
+turn off | phrasal | 9.3 | warning | SET TO OFF / STOP | -
+take out | phrasal | 9.3 | warning | REMOVE | -
+take off | phrasal | 9.3 | warning | REMOVE | -
+pick up | phrasal | 9.3 | warning | LIFT / GET | -
+look at | phrasal | 9.3 | warning | SEE / EXAMINE | -
+look for | phrasal | 9.3 | warning | FIND | -
+get rid of | phrasal | 9.3 | warning | DISCARD / REMOVE | -
+throw away | phrasal | 9.3 | warning | DISCARD | -
+fill out | phrasal | 9.3 | warning | COMPLETE | -
+fill in | phrasal | 9.3 | warning | COMPLETE / WRITE | -
+hook up | phrasal | 9.3 | warning | CONNECT | -
+plug in | phrasal | 9.3 | warning | CONNECT | -
+top up | phrasal | 9.3 | warning | ADD / FILL | -
+cool down | phrasal | 9.3 | warning | BECOME COOL | -
+warm up | phrasal | 9.3 | warning | BECOME WARM | -
+end up | phrasal | 9.3 | warning | (rewrite) | -
+come up | phrasal | 9.3 | warning | (rewrite) | -
+bring up | phrasal | 9.3 | warning | (rewrite) | -
+work out | phrasal | 9.3 | warning | CALCULATE / FIND | -
+make up | phrasal | 9.3 | warning | (rewrite) | -
+point out | phrasal | 9.3 | warning | SHOW / TELL | -
+deal with | phrasal | 9.3 | warning | (rewrite) | -
+kick off | phrasal | 9.3 | warning | START | -
+spin up | phrasal | 9.3 | warning | START | -
+tear down | phrasal | 9.3 | warning | REMOVE / DISASSEMBLE | -

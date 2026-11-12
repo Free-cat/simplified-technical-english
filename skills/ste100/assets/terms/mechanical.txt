@@ -1,0 +1,492 @@
+# ASD-STE100 term pack: mechanical equipment, maintenance and manufacturing
+#
+# This file is NOT part of the official ASD-STE100 Simplified Technical English dictionary.
+# It is a project extension listing subject-field words that Issue 9 allows as technical nouns
+# (rule 1.5, 22 categories) or technical verbs (rule 1.12, 4 categories) for maintenance
+# procedures, shop-floor work instructions and equipment manuals (general machinery, not only aircraft).
+#
+# Each entry was checked against Issue 9 rules 1.5 to 1.13 and against the dictionary status:
+# a word that is APPROVED in the dictionary with a covering meaning is not listed (see the last block).
+# Rejected verbs (rule 1.13: names of parts or materials used as verbs, general verbs) are not listed.
+#
+# A company parts catalog or term base overrides this file. Where they differ, use the company term.
+#
+# Format (UTF-8), one entry per line, four fields separated by " | ":
+#   term | TN or TV | category | std or ext[; note]
+#   TN = technical noun (rule 1.5). Category 1 to 22 (rule 1.5 category numbers).
+#   TV = technical verb (rule 1.12). Category 1a to 1f (manufacturing), 2c (computer system operations),
+#        3a (engineering), 3e (automotive and railway), 3f (energy, oil and gas).
+#   std = the word is an example in the standard's own list for that category.
+#   ext = project extension by the same principle; the word is not a listed example.
+#   note = optional. "general sense: use X" means the word alone is NOT approved in that sense, so a
+#          script can warn and suggest the approved alternative. "also called" lists synonyms
+#          (rule 1.11): use the first term in the entry and avoid the others.
+#   Lowercase terms, except where a capital is part of the name (O-ring). American spelling (rule 1.14).
+#   Multi-word terms have at most three words; a hyphenated word counts as one.
+#   The same word may appear once as TN and once as TV (for example drill, file, saw).
+
+# fasteners, pins and hardware
+bolt | TN | 1 | std; do not use as a verb (use attach (v))
+screw | TN | 1 | std; do not use as a verb (use turn (v) or attach (v))
+stud | TN | 1 | ext
+nut | TN | 1 | ext
+washer | TN | 1 | ext
+lock washer | TN | 1 | ext
+dowel pin | TN | 1 | ext
+cotter pin | TN | 1 | ext; also called split pin (regional usage)
+rivet | TN | 1 | ext; do not use as a verb (use fasten with rivets)
+retaining ring | TN | 1 | ext; also called circlip, snap ring
+key | TN | 1 | ext; verb use not approved
+keyway | TN | 1 | ext
+spline | TN | 1 | ext
+clip | TN | 1 | std
+grease fitting | TN | 1 | ext; also called grease nipple
+spring | TN | 1 | ext; std lists spring only as a season (category 9); verb use not approved
+base plate | TN | 1 | ext; general sense: base (n) not approved on a surface, use bottom (n)
+
+# seals, gaskets and bearings
+oil seal | TN | 1 | std
+shaft seal | TN | 1 | ext
+lip seal | TN | 1 | ext
+mechanical seal | TN | 1 | ext
+O-ring | TN | 1 | ext
+gasket | TN | 1 | ext
+bearing | TN | 1 | ext
+ball bearing | TN | 1 | ext
+roller bearing | TN | 1 | ext
+thrust bearing | TN | 1 | ext
+bushing | TN | 1 | ext
+main bearing | TN | 1 | ext; general sense: main (adj) alone is not approved, use primary (adj) when "main" is not part of the name (rule 1.6)
+spacer | TN | 1 | ext
+sleeve | TN | 1 | ext
+shim | TN | 1 | ext
+
+# power transmission and rotating parts
+gear | TN | 1 | ext
+sprocket | TN | 1 | ext
+belt | TN | 1 | ext
+drive belt | TN | 1 | ext
+timing belt | TN | 1 | ext
+chain | TN | 1 | ext
+pulley | TN | 1 | ext
+coupling | TN | 1 | ext
+shaft | TN | 3 | std
+drive shaft | TN | 1 | ext
+cam | TN | 1 | ext
+camshaft | TN | 1 | ext
+crankshaft | TN | 1 | ext
+gear ratio | TN | 7 | ext
+clutch | TN | 6 | ext
+transmission | TN | 6 | ext
+gearbox | TN | 6 | ext
+
+# fluid power and piping
+pipe | TN | 1 | std
+tube | TN | 1 | ext
+hose | TN | 1 | ext
+fitting | TN | 1 | ext
+valve | TN | 1 | ext
+check valve | TN | 1 | ext
+safety valve | TN | 1 | ext
+pressure relief valve | TN | 1 | ext
+manifold | TN | 1 | ext
+filter | TN | 1 | std
+oil filter | TN | 1 | ext
+air filter | TN | 1 | ext
+drain plug | TN | 1 | ext
+cylinder | TN | 1 | ext
+hydraulic cylinder | TN | 1 | ext
+piston | TN | 1 | ext
+piston rod | TN | 1 | ext
+plunger | TN | 1 | ext
+actuator | TN | 1 | ext
+pump | TN | 6 | std; verb use is limited (see TV list)
+accumulator | TN | 6 | ext
+reservoir | TN | 6 | ext
+heat exchanger | TN | 6 | ext
+radiator | TN | 6 | ext
+inlet | TN | 6 | std
+vent | TN | 6 | std; verb use not approved
+hydraulic system | TN | 6 | ext
+pneumatic system | TN | 6 | ext
+lubrication system | TN | 6 | ext
+cooling system | TN | 6 | ext
+fuel system | TN | 6 | ext
+control system | TN | 6 | ext
+power unit | TN | 6 | std
+
+# electrical parts
+cable | TN | 1 | std
+conductor | TN | 1 | std
+contact | TN | 1 | std
+connector | TN | 1 | ext
+terminal | TN | 1 | ext
+fuse | TN | 1 | ext
+relay | TN | 1 | ext
+switch | TN | 1 | std; verb use not approved (use set (v))
+indicator | TN | 1 | std
+sensor | TN | 1 | ext
+solenoid | TN | 1 | ext
+engine | TN | 1 | std
+electric motor | TN | 2 | ext
+
+# machines and locations on them
+machine | TN | 2 | ext; verb use not approved (see excluded verbs)
+machine tool | TN | 2 | ext
+lathe | TN | 2 | ext
+milling machine | TN | 2 | ext
+drill press | TN | 2 | ext
+hydraulic press | TN | 2 | ext
+conveyor | TN | 2 | ext
+forklift | TN | 2 | ext
+crane | TN | 2 | ext
+air compressor | TN | 2 | ext
+tank | TN | 2 | std
+
+# hand tools and tool parts
+wrench | TN | 3 | ext
+torque wrench | TN | 3 | std
+adjustable wrench | TN | 3 | ext
+socket | TN | 3 | ext
+hex key | TN | 3 | ext; also called hex wrench
+screwdriver | TN | 3 | ext
+hammer | TN | 3 | ext
+mallet | TN | 3 | ext
+punch | TN | 3 | ext
+chisel | TN | 3 | ext
+hacksaw | TN | 3 | ext
+saw | TN | 3 | ext
+file | TN | 3 | std
+reamer | TN | 3 | ext
+die | TN | 3 | ext
+blade | TN | 3 | std
+brush | TN | 3 | std
+drill | TN | 3 | std
+drill bit | TN | 3 | ext
+grinding wheel | TN | 3 | ext
+bench grinder | TN | 3 | ext
+vise | TN | 3 | ext; American spelling
+pliers | TN | 3 | ext
+grease gun | TN | 3 | ext
+lockout device | TN | 3 | ext
+handle | TN | 3 | std
+roller | TN | 3 | std
+rope | TN | 3 | std
+rung | TN | 3 | std
+access ladder | TN | 3 | std
+cover | TN | 3 | std
+cap | TN | 3 | std
+label | TN | 3 | std
+tag | TN | 3 | std
+test rig | TN | 3 | std
+rigging pin | TN | 3 | std
+display | TN | 3 | std
+
+# measuring tools
+gauge | TN | 3 | std; also spelled gage
+pressure gauge | TN | 3 | ext
+micrometer | TN | 3 | ext
+caliper | TN | 3 | ext
+dial indicator | TN | 3 | ext
+feeler gauge | TN | 3 | ext
+spirit level | TN | 3 | ext
+
+# workholding, lifting and support equipment
+clamp | TN | 3 | std
+chock | TN | 3 | std
+jack | TN | 3 | std
+stand | TN | 3 | std
+trestle | TN | 3 | std
+fixture | TN | 3 | ext
+jig | TN | 3 | ext
+mold | TN | 3 | ext; American spelling
+chuck | TN | 3 | ext
+puller | TN | 3 | ext
+hoist | TN | 3 | ext
+sling | TN | 3 | ext
+shackle | TN | 3 | ext
+lifting hook | TN | 3 | ext
+
+# materials and consumables
+adhesive | TN | 4 | std
+aluminum alloy | TN | 4 | std
+copper | TN | 4 | std
+detergent | TN | 4 | std
+grease | TN | 4 | std; verb use not permitted (use apply grease)
+oil | TN | 4 | std; verb use not permitted (use lubricate (v) or apply oil)
+fuel | TN | 4 | std; verb use not approved (use refuel (v))
+paint | TN | 4 | std; approved verb "paint" exists
+primer | TN | 4 | std
+sealant | TN | 4 | std
+tape | TN | 4 | std
+wire | TN | 4 | std; verb use not permitted (use attach with wire)
+penetrant spray | TN | 4 | std
+metal | TN | 4 | std
+plastic | TN | 4 | std
+stainless steel | TN | 4 | std
+steel | TN | 4 | ext
+brass | TN | 4 | ext
+cast iron | TN | 4 | ext
+water | TN | 4 | std
+lubricant | TN | 4 | ext
+coolant | TN | 4 | ext
+solvent | TN | 4 | ext
+degreaser | TN | 4 | ext
+brake fluid | TN | 4 | ext
+hydraulic fluid | TN | 4 | ext; also called hydraulic oil
+thread locker | TN | 4 | ext
+anti-seize compound | TN | 4 | ext
+wiping cloth | TN | 4 | ext; also called rag
+abrasive | TN | 4 | ext; approved adjective "abrasive" exists
+abrasive paper | TN | 4 | ext; also called sandpaper
+
+# unwanted material
+debris | TN | 4 | std
+dirt | TN | 4 | std
+dust | TN | 4 | std
+foreign object | TN | 4 | std
+waste | TN | 4 | std
+hazardous waste | TN | 4 | std
+hazardous substances | TN | 4 | std
+lint | TN | 4 | ext
+sludge | TN | 4 | ext
+carbon deposit | TN | 4 | ext
+metal chip | TN | 4 | ext; general sense: chip (n) not approved, use particle (n)
+weld spatter | TN | 4 | ext
+contaminant | TN | 4 | ext; general sense: contaminant (n) not approved, use contamination (n) in general text
+
+# facilities, shop areas and storage
+shop | TN | 5 | std
+shop floor | TN | 5 | ext
+workshop | TN | 5 | ext
+store | TN | 5 | std
+storage | TN | 5 | std
+storeroom | TN | 5 | ext
+tool crib | TN | 5 | ext
+service bay | TN | 5 | std
+base | TN | 5 | std; general sense: base (n) for a surface is not approved, use bottom (n)
+
+# engineering quantities and fits (category 7)
+allowance | TN | 7 | std
+burr | TN | 7 | std
+defect | TN | 7 | std
+diameter | TN | 7 | std
+duty cycle | TN | 7 | std
+failure | TN | 7 | std
+heat treatment | TN | 7 | std
+idle speed | TN | 7 | std
+interference | TN | 7 | std
+load | TN | 7 | std
+modification | TN | 7 | std
+overhaul | TN | 7 | std
+pressure | TN | 7 | std
+radius | TN | 7 | std
+shutdown | TN | 7 | std
+stiffness | TN | 7 | std
+strength | TN | 7 | std
+suction | TN | 7 | std
+tension | TN | 7 | std
+temperature | TN | 7 | std
+thread | TN | 7 | std
+torque | TN | 7 | std
+voltage | TN | 7 | std
+hardness | TN | 7 | std
+backlash | TN | 7 | ext
+runout | TN | 7 | ext
+flatness | TN | 7 | ext; general sense: flatness (n) not approved, use flat (adj) in general text
+viscosity | TN | 7 | ext
+friction | TN | 7 | ext
+bore | TN | 7 | ext
+stroke | TN | 7 | ext; general sense: stroke (n) not approved, use travel (n) in general text
+surface roughness | TN | 7 | ext; general sense: roughness (n) alone is not approved
+wear limit | TN | 7 | ext
+press fit | TN | 7 | ext; general sense: fit (v) not approved, use install (v)
+clearance fit | TN | 7 | ext
+interference fit | TN | 7 | ext
+
+# units of measurement and time (category 9)
+meter | TN | 9 | std
+kilogram | TN | 9 | std
+liter | TN | 9 | std
+ampere | TN | 9 | std
+hour | TN | 9 | std
+minute | TN | 9 | std
+second | TN | 9 | std
+millimeter | TN | 9 | ext; symbol mm
+newton | TN | 9 | ext; symbol N
+newton-meter | TN | 9 | ext; symbol N.m
+pascal | TN | 9 | ext; symbol Pa
+kilopascal | TN | 9 | ext; symbol kPa
+megapascal | TN | 9 | ext; symbol MPa
+bar | TN | 9 | ext
+watt | TN | 9 | ext; symbol W
+kilowatt | TN | 9 | ext; symbol kW
+volt | TN | 9 | ext; symbol V
+inch | TN | 9 | ext; symbol in.
+pound | TN | 9 | ext; symbol lb
+degree Celsius | TN | 9 | ext; symbol degrees C
+revolution per minute | TN | 9 | ext; symbol rpm
+
+# operating conditions (category 16)
+humidity | TN | 16 | std
+moisture | TN | 16 | std
+ice | TN | 16 | std
+ambient temperature | TN | 16 | ext
+operating temperature | TN | 16 | ext
+operating pressure | TN | 16 | ext
+
+# damage terms (category 18)
+buckle | TN | 18 | std
+chafing | TN | 18 | std
+corrosion | TN | 18 | std
+crack | TN | 18 | std
+crack propagation | TN | 18 | std
+deformation | TN | 18 | std
+dent | TN | 18 | std
+discoloration | TN | 18 | std
+distortion | TN | 18 | std
+erosion | TN | 18 | std
+fracture | TN | 18 | std
+fraying | TN | 18 | std
+galling | TN | 18 | std
+kink | TN | 18 | std
+nick | TN | 18 | std
+score | TN | 18 | std
+scratch | TN | 18 | std
+stain | TN | 18 | std
+pitting | TN | 18 | ext
+fretting | TN | 18 | ext
+seizure | TN | 18 | ext
+spalling | TN | 18 | ext
+fatigue | TN | 18 | ext
+fatigue crack | TN | 18 | ext
+abrasion | TN | 18 | ext
+delamination | TN | 18 | ext
+gouge | TN | 18 | ext
+rust | TN | 18 | ext
+wear | TN | 18 | ext; approved verb "wear" exists
+
+# maintenance documents and warnings (category 15)
+warning | TN | 15 | std
+caution | TN | 15 | std
+danger | TN | 15 | std; general sense: danger (n) is not approved in this use, use risk (n) in general text
+note | TN | 15 | std
+checklist | TN | 15 | std
+maintenance practice | TN | 15 | std
+maintenance records | TN | 15 | std
+service bulletin | TN | 15 | std
+standard practices manual | TN | 15 | std
+test procedure | TN | 15 | std
+functional test | TN | 15 | std
+data module | TN | 15 | std
+
+# manufacturing processes: remove material (category 1a)
+drill | TV | 1a | std
+grind | TV | 1a | std
+mill | TV | 1a | std
+ream | TV | 1a | std
+unsolder | TV | 1a | std
+bore | TV | 1a | ext
+broach | TV | 1a | ext
+chamfer | TV | 1a | ext
+countersink | TV | 1a | ext
+deburr | TV | 1a | ext
+file | TV | 1a | ext; general sense: file (v) not approved, use remove (v) where it is accurate
+hone | TV | 1a | ext
+lap | TV | 1a | ext
+plane | TV | 1a | ext
+saw | TV | 1a | ext
+tap | TV | 1a | ext; approved verb "tap" means hit lightly; the thread-cutting sense is technical
+
+# manufacturing processes: add material (category 1b)
+flame | TV | 1b | std
+insulate | TV | 1b | std
+remetal | TV | 1b | std
+retread | TV | 1b | std
+galvanize | TV | 1b | ext
+
+# manufacturing processes: attach material (category 1c)
+braze | TV | 1c | std
+crimp | TV | 1c | std
+solder | TV | 1c | std
+weld | TV | 1c | std
+spot-weld | TV | 1c | ext
+
+# manufacturing processes: change mechanical strength or physical properties (category 1d)
+anneal | TV | 1d | std
+cure | TV | 1d | std
+decay | TV | 1d | std; general sense: decay (v) not approved, use decrease (v) in general text
+heat-treat | TV | 1d | std
+magnetize | TV | 1d | std
+normalize | TV | 1d | std
+vaporize | TV | 1d | std
+temper | TV | 1d | ext
+quench | TV | 1d | ext
+nitride | TV | 1d | ext
+carburize | TV | 1d | ext
+case-harden | TV | 1d | ext
+stress-relieve | TV | 1d | ext
+shot-peen | TV | 1d | ext
+
+# manufacturing processes: change surface finish (category 1e)
+buff | TV | 1e | std
+burnish | TV | 1e | std
+dress | TV | 1e | std; general sense: dress (v) not approved, use put on (v) for clothing and prepare or use (v) otherwise
+passivate | TV | 1e | std
+plate | TV | 1e | std
+anodize | TV | 1e | ext
+electroplate | TV | 1e | ext
+
+# manufacturing processes: change shape (category 1f)
+blend | TV | 1f | std; general sense: blend (v) not approved, use mix (v) in general text
+cast | TV | 1f | std
+extrude | TV | 1f | std
+spin | TV | 1f | std
+stamp | TV | 1f | std; general sense: stamp (v) not approved in this use, use put (v) or identify (v) in general text
+forge | TV | 1f | ext
+swage | TV | 1f | ext
+knurl | TV | 1f | ext
+flare | TV | 1f | ext
+
+# engineering (category 3a)
+compensate for | TV | 3a | std
+convert | TV | 3a | std; general sense: convert (v) not approved, use change (v) in general text
+detect | TV | 3a | std; general sense: detect (v) not approved, use find (v) in general text
+preload | TV | 3a | ext; general sense: no approved verb, describe as apply a load
+depressurize | TV | 3a | ext; general sense: depressurize (v) not approved, use reduce (v) pressure or release pressure
+
+# automotive and railway (category 3e)
+accelerate | TV | 3e | std; general sense: accelerate (v) not approved, use increase (v) in general text
+brake | TV | 3e | std
+couple | TV | 3e | std; general sense: couple (v) not approved, use connect (v) or attach (v)
+crank | TV | 3e | std
+decouple | TV | 3e | std
+
+# energy, oil and gas (category 3f)
+extract | TV | 3f | std; general sense: extract (v) not approved; use remove (v) where it is accurate (rule 1.12)
+inject | TV | 3f | std; general sense: inject (v) not approved, use put (v) in general text
+pump | TV | 3f | std; general sense: pump (v) not approved; use move (v) where it is accurate (rule 1.12)
+
+# computer and system operations (category 2c)
+boot | TV | 2c | std
+reboot | TV | 2c | std
+download | TV | 2c | std
+upload | TV | 2c | std
+debug | TV | 2c | std
+update | TV | 2c | std
+upgrade | TV | 2c | std
+load | TV | 2c | std; general sense: load (v) not approved; use install (v) for software or put (v) in general text
+
+# approved words, no entry needed (approved in STE dictionary with a covering meaning)
+# nouns: seal, exhaust, flange, fit, level, flame, particle, tool, tolerance, clearance, flow, speed, rate, leak, vibration, bend, shape, face, turn, procedure
+# verbs: align, attach, balance, bleed, burn, bend, calibrate, clean, compress, contact, cut, discard, drain, flow, freeze, inflate,
+#        deflate, install, latch, lift, lubricate, measure, park, paint, polish, pressurize, push, refuel, remove, seal, set, spray,
+#        tag, tighten, loosen, torque, turn, wear, assemble, adjust
+#
+# rejected as technical verbs (rule 1.12 and 1.13), not listed:
+# machine (general verb; use ream, mill, bore, etc.), process (use do or the specific verb), clamp, grease, oil, wire, bolt, screw,
+# spring, key, rivet, cap, label, handle (names of parts, tools or materials used as verbs), mount (not approved; use install (v) or attach (v)),
+# fit (not approved; use install (v) or attach (v)), sand (technical noun, category 16; rule 1.7), thread (not approved; use the specific
+# verb tap (v) or the approved verb turn (v)), coat (not approved; use apply (v)), vent (not approved; use release (v) or open (v)).
+#
+# technical nouns given general-sense warnings: base, main (only in names), chip, contaminant, danger, flatness, stroke, roughness, fit, mount.

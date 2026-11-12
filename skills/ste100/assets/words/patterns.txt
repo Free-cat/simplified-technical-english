@@ -1,0 +1,37 @@
+# Regular expressions for the checker (applied to the lower-case sentence, or to the
+# original sentence with flag cs). Columns:
+#   regex | rule | severity | message | flags | replacement
+#   flags: auto = ste.py fix --write may replace the match with the replacement; cs = case-sensitive
+\bconsists? of\b | 1.1 | error | "consist of" -> HAVE / INCLUDE / CONTAIN | - | -
+\b(has|have|had) to\b | 3.4 | error | "have to" -> MUST | - | -
+\bneeds? to\b | 3.4 | error | "need to" -> MUST | - | -
+\b(is|are) to be\b | 3.4 | error | "is to be" -> MUST BE, or use a command | - | -
+\bought to\b | 3.4 | error | "ought to" -> MUST | - | -
+\b(and so on|and so forth)\b | GR-6 | error | Give the full list or "and other ..." | - | -
+\bmake sure (?!that\b) | GR-1 | warning | Keep "that" after MAKE SURE | - | -
+\bbe sure (to|that)\b | 1.1 | warning | "be sure" -> MAKE SURE THAT | - | -
+\bas (needed|required|necessary|applicable|appropriate)\b | 4.1 | warning | Vague phrase. Say when or how much. | - | -
+\bif (needed|required|necessary|applicable|appropriate)\b | 4.1 | info | Vague condition. Say what the condition is. | - | -
+\bin case( of)?\b | 1.1 | warning | "in case" -> IF | - | -
+\bin addition( to)?\b | 1.1 | warning | "in addition" -> ALSO / AND | - | -
+\be\.g\.?(?=\W|$) | GR-6 | error | "e.g." -> FOR EXAMPLE | auto | for example
+\bi\.e\.?(?=\W|$) | GR-6 | error | "i.e." -> THAT IS | auto | that is
+\betc\.?(?=\W|$) | GR-6 | error | "etc." -> give the full list or "and other ..." | - | -
+\bvs\.?(?=\W|$) | GR-6 | error | "vs." -> COMPARED WITH | auto | compared with
+\bviz\.?(?=\W|$) | GR-6 | error | "viz." -> THAT IS | auto | that is
+\bN\.?B\.(?=\W|$) | GR-6 | error | "N.B." -> NOTE | auto,cs | Note
+\bca\.(?=\W|$) | GR-6 | error | "ca." -> APPROXIMATELY | auto | approximately
+# Restricted meanings (rules 1.3 and 9.2): the approved word is allowed only in one sense.
+\bwear (?:\w+ ){0,2}?(?:clothing|protection|protective|gloves?|masks?|goggles|glasses|helmets?|boots|respirators?|ppe|apparel|coats?|jackets?|overalls|suits?|shoes|hearing) | 1.3 | warning | "wear" is for damage by friction. For clothing and protection, use "put on" -> PUT ON / USE | - | -
+\bsee (?=(?:table|figure|fig|section|step|page|chapter|paragraph|annex|appendix)s?\b) | 1.3 | warning | "see" is for the eyes only. For a reference, use "refer to" -> REFER TO | - | -
+\b(?:above|over) (?=\d) | 1.3 | warning | "above" and "over" for a quantity -> MORE THAN | - | -
+\b(?:below|under) (?=\d) | 1.3 | warning | "below" and "under" for a quantity -> LESS THAN | - | -
+\bturns? (?=(?:red|green|blue|yellow|black|white|orange|purple|brown|grey|gray|pink|amber|violet)\b)|\bturned (?=(?:red|green|blue|yellow|black|white|orange|purple|brown|grey|gray|pink|amber|violet)\b) | 1.3 | warning | "turn" for a color change -> THE COLOR CHANGES TO | - | -
+# Noun-only words used as verbs (rule 1.2). {V} = words approved as a noun and not as a verb
+# (filled from part-of-speech.txt by ste.py); {DET} = a determiner or pronoun that follows a verb.
+^(?P<w>{V})\s+(?=(?:{DET})\b) | 1.2 | error | noun-only word used as a verb | verbuse | -
+,\s*(?P<w>{V})\s+(?=(?:{DET})\b) | 1.2 | error | noun-only word used as a verb | verbuse | -
+\b(?:and|then|or)\s+(?P<w>{V})\s+(?=(?:{DET})\b) | 1.2 | error | noun-only word used as a verb | verbuse | -
+\bto\s+(?P<w>{V})\s+(?=(?:{DET})\b) | 1.2 | error | noun-only word used as a verb | verbuse | -
+\b(?:must|can|will|should|may|shall|do|does|did|not|let|please)\s+(?:(?:not|also|always|first|then|again|now)\s+)?(?P<w>{V})\b | 1.2 | error | noun-only word used as a verb | verbuse | -
+\b(?:you|we|they|i|operators?|technicians?|users?|engineers?)\s+(?:(?:must|can|will|should|also|then|first|always|not|may|shall)\s+)*(?P<w>{V})\b | 1.2 | error | noun-only word used as a verb | verbuse | -

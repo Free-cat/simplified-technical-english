@@ -1,7 +1,8 @@
 # Examples
 
-One real input and output for each job. An agent with the skill made the
-outputs; nobody edited them by hand, so they show the usual quality, defects included.
+One input and output for each job. An agent with the skill made the outputs
+(version 0.1.0). In version 0.2.0, a review pass against the rules corrected a few
+clear violations by hand in the outputs. The rest of each output is as the agent wrote it.
 
 | Job | Input | Output |
 |---|---|---|

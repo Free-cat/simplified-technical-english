@@ -1,0 +1,517 @@
+# ASD-STE100 Simplified Technical English, Issue 9
+# Term pack: SOFTWARE AND IT OPERATIONS
+#
+# What this file is: a list of subject-field words for software user guides,
+# API and administration documentation, runbooks and DevOps procedures.
+# Each entry is a technical noun (TN) or technical verb (TV) that a writer
+# may use in STE text for this domain.
+#
+# What this file is NOT: it is not part of the official ASD-STE100 dictionary
+# and it does not change it. The official dictionary holds general words only.
+# Technical nouns and technical verbs are allowed by rules 1.5 and 1.12.
+#
+# How each entry was checked: against Issue 9 rule 1.5 (technical nouns, 22
+# categories), rule 1.12 (technical verbs, 4 categories), rule 1.6 (words not
+# in the dictionary, allowed only as technical nouns), rules 1.7 and 1.10
+# (no technical noun used as a verb, no slang or jargon), rule 1.11 (one name
+# for one item), and the dictionary status of each word.
+# Words that are approved in the dictionary with a meaning that covers the
+# software use are not listed as terms (see the comment blocks at the end).
+#
+# Columns:  term | TN or TV | category | std or ext[; note]
+#   TN / TV  technical noun / technical verb
+#   category rule 1.5 category number for nouns (6, 7, 9, 11, 15, 18, 19, 20, 21)
+#            or rule 1.12 verb category for verbs (2a input/output,
+#            2b user interface and application processes, 2c system operations)
+#   std      the word appears in the standard's own example list for that category
+#   ext      added by this project by the same principle (not in the examples)
+#   note     dictionary status and usage advice:
+#            "general sense: use X" means the common sense of the word is not
+#            approved and X is the approved alternative for that sense
+#
+# Lowercase terms unless a capital is part of the name. Max three words
+# (rule 2.1); a hyphenated group counts as one word.
+#
+# A company term base or a company glossary overrides this file.
+# Where two names are used for one item, both are listed with a note, and
+# the writer must use only one of them in a document (rule 1.11).
+
+# ---------------------------------------------------------------- hardware
+
+hardware | TN | 6 | std
+laptop | TN | 19 | std
+tablet | TN | 19 | std
+smartphone | TN | 19 | std
+phone | TN | 19 | std
+touchscreen | TN | 19 | std
+mouse | TN | 19 | std
+keyboard | TN | 19 | ext
+printer | TN | 19 | ext
+scanner | TN | 19 | ext
+monitor | TN | 19 | ext; noun for the screen, the approved verb "monitor" is separate
+screen | TN | 19 | std
+server | TN | 19 | ext
+workstation | TN | 19 | ext
+router | TN | 19 | ext
+modem | TN | 19 | ext
+switch | TN | 1 | std; general verb sense not approved, use set (v)
+cable | TN | 1 | std
+transceiver | TN | 1 | std
+processor | TN | 19 | ext
+motherboard | TN | 19 | ext
+circuit board | TN | 6 | ext
+power supply | TN | 6 | ext
+battery | TN | 6 | ext
+sensor | TN | 6 | ext
+memory | TN | 19 | std
+RAM | TN | 19 | ext; random-access memory
+hard drive | TN | 19 | ext; the general verb "drive" is not approved
+solid-state drive | TN | 19 | ext
+USB flash drive | TN | 19 | ext
+storage device | TN | 19 | ext
+network adapter | TN | 19 | ext
+network port | TN | 19 | ext
+
+# ---------------------------------------------------------- data and storage
+
+database | TN | 19 | std
+database table | TN | 19 | ext
+database administrator | TN | 11 | ext
+column | TN | 19 | ext
+field | TN | 19 | std
+primary key | TN | 19 | ext
+foreign key | TN | 19 | ext
+schema | TN | 19 | ext
+query | TN | 19 | ext; the verb "query" is listed separately
+transaction | TN | 19 | ext
+data type | TN | 19 | ext
+data corruption | TN | 18 | ext; damage term
+metadata | TN | 19 | std
+content | TN | 19 | std
+backup | TN | 19 | std; general noun not approved, use emergency (n) or auxiliary (adj) in general text
+backup file | TN | 19 | std
+archive | TN | 19 | ext
+archive file | TN | 19 | ext
+snapshot | TN | 19 | ext
+replica | TN | 19 | ext
+cache | TN | 19 | ext
+buffer | TN | 19 | ext
+queue | TN | 19 | ext
+job queue | TN | 19 | ext
+
+# ------------------------------------------------------------- files and folders
+
+file | TN | 19 | std
+file name | TN | 19 | ext
+file path | TN | 19 | ext
+file extension | TN | 19 | ext
+folder | TN | 19 | ext; synonym of "directory", both are real product names, use one per document
+directory | TN | 19 | ext; synonym of "folder", use one per document
+root directory | TN | 19 | ext
+
+# ------------------------------------------------------------- software objects
+
+software | TN | 19 | ext
+application | TN | 19 | ext; general noun sense not approved, the approved verb is apply
+program | TN | 19 | ext; general noun sense not approved, use sequence (n) in general text
+source code | TN | 19 | ext
+script | TN | 19 | ext
+library | TN | 19 | ext
+module | TN | 19 | ext
+class | TN | 19 | ext
+parameter | TN | 19 | ext
+string | TN | 19 | ext
+integer | TN | 19 | ext
+boolean | TN | 19 | ext
+array | TN | 19 | ext
+environment variable | TN | 19 | ext
+setting | TN | 19 | ext; general sense not approved, use adjustment (n)
+configuration | TN | 7 | std
+configuration file | TN | 19 | ext
+configuration setting | TN | 19 | ext
+option | TN | 19 | ext; general sense not approved, use alternative (n)
+default value | TN | 19 | ext; synonym of "preset value", both are real names, use one
+preset value | TN | 19 | std
+process | TN | 7 | std; general noun sense not approved, use procedure (n)
+thread | TN | 19 | ext; the same word is a mechanical term in category 7
+system service | TN | 19 | ext
+container | TN | 19 | ext; approved general sense (holder) does not cover software use
+container image | TN | 19 | ext
+image | TN | 19 | ext
+virtual machine | TN | 19 | ext
+driver | TN | 19 | ext
+firmware | TN | 19 | ext
+kernel | TN | 19 | ext
+operating system | TN | 19 | std
+pre-loaded software | TN | 19 | std
+plug-in | TN | 19 | std
+add-on | TN | 19 | std
+add-in | TN | 19 | std
+dependency | TN | 19 | ext
+software package | TN | 19 | ext
+software patch | TN | 19 | ext; the approved noun means a piece of material
+software release | TN | 19 | ext
+build | TN | 19 | ext; general noun sense not approved, use structure (n)
+version | TN | 19 | ext
+branch | TN | 19 | ext
+commit | TN | 19 | ext
+repository | TN | 19 | ext
+pipeline | TN | 19 | ext
+production environment | TN | 19 | ext
+test environment | TN | 19 | ext
+staging environment | TN | 19 | ext
+development environment | TN | 19 | ext
+defect | TN | 7 | std
+failure | TN | 7 | std
+signal | TN | 7 | std
+load | TN | 7 | std; the verb "load" is in the system operations list
+
+# -------------------------------------------------- development and delivery
+
+pull request | TN | 19 | ext; synonym of "merge request", both are real product names, use one
+merge request | TN | 19 | ext; synonym of "pull request", use one
+code review | TN | 19 | ext
+bug report | TN | 19 | ext
+test case | TN | 19 | ext
+test suite | TN | 19 | ext
+unit test | TN | 19 | ext
+feature flag | TN | 19 | ext
+continuous integration | TN | 19 | ext
+continuous delivery | TN | 19 | ext
+compiler | TN | 19 | ext
+interpreter | TN | 19 | ext
+debugger | TN | 19 | ext
+software development kit | TN | 19 | ext
+change request | TN | 19 | ext
+rollback | TN | 19 | ext; noun form, the verb is "roll back"
+rollout | TN | 20 | ext
+deployment | TN | 20 | std
+lifecycle | TN | 20 | std; for example software lifecycle
+
+# ----------------------------------------------------------------- network
+
+network | TN | 19 | std
+internet | TN | 19 | std
+protocol | TN | 19 | ext
+packet | TN | 19 | ext
+packet loss | TN | 7 | ext
+proxy | TN | 19 | ext
+endpoint | TN | 19 | ext
+IP address | TN | 19 | ext
+MAC address | TN | 19 | ext
+DNS | TN | 19 | ext; domain name system
+domain name | TN | 19 | ext
+URL | TN | 19 | ext; uniform resource locator
+hyperlink | TN | 19 | ext
+website | TN | 19 | ext
+web page | TN | 19 | ext
+web browser | TN | 19 | ext
+search engine | TN | 19 | std
+VPN | TN | 19 | ext; virtual private network
+API | TN | 19 | ext; application programming interface, spell out at first use
+graphical user interface | TN | 19 | ext
+command-line interface | TN | 19 | ext
+command | TN | 19 | ext
+terminal | TN | 19 | ext
+console | TN | 19 | ext
+shell | TN | 19 | ext
+bandwidth | TN | 7 | ext
+latency | TN | 7 | ext
+throughput | TN | 7 | ext
+timeout | TN | 19 | ext
+e-mail | TN | 19 | std
+
+# ------------------------------------------------- security and access
+
+firewall | TN | 19 | std
+authentication | TN | 19 | std
+authorization | TN | 19 | ext
+cybersecurity | TN | 19 | std
+encryption | TN | 19 | ext
+decryption | TN | 19 | ext
+token | TN | 19 | std
+password | TN | 19 | ext
+username | TN | 19 | ext
+user account | TN | 19 | ext
+administrator account | TN | 19 | ext
+access control | TN | 19 | ext
+access key | TN | 19 | ext
+permission | TN | 19 | ext
+user role | TN | 19 | ext
+credential | TN | 19 | ext
+session | TN | 19 | ext
+hash | TN | 19 | ext
+digital certificate | TN | 19 | ext
+digital signature | TN | 19 | ext
+public key | TN | 19 | ext
+private key | TN | 19 | ext
+API key | TN | 19 | ext
+two-factor authentication | TN | 19 | ext
+multi-factor authentication | TN | 19 | ext
+single sign-on | TN | 19 | ext; abbreviation SSO
+sign-in | TN | 19 | ext; synonym of "login", use one
+login | TN | 19 | ext; synonym of "sign-in", use one
+malware | TN | 19 | ext
+ransomware | TN | 19 | ext
+phishing | TN | 19 | ext
+antivirus | TN | 19 | ext
+vulnerability | TN | 19 | ext
+security patch | TN | 19 | ext
+security incident | TN | 19 | ext
+checksum | TN | 7 | ext
+allowlist | TN | 19 | ext; synonym of "whitelist", use allowlist only
+blocklist | TN | 19 | ext; synonym of "blacklist", use blocklist only
+audit log | TN | 19 | ext
+audit trail | TN | 19 | ext
+
+# ------------------------------------------------- user interface elements
+
+menu | TN | 19 | std
+context menu | TN | 19 | ext
+toolbar | TN | 19 | std
+status bar | TN | 19 | std
+icon | TN | 19 | std
+cursor | TN | 19 | std
+mouse pointer | TN | 19 | ext
+window | TN | 19 | ext
+dialog box | TN | 19 | ext
+dialog check box | TN | 19 | std
+check box | TN | 19 | ext
+radio button | TN | 19 | ext
+button | TN | 19 | ext
+text box | TN | 19 | ext
+text field | TN | 19 | ext
+drop-down list | TN | 19 | ext
+list box | TN | 19 | ext
+scroll bar | TN | 19 | ext
+tab | TN | 19 | ext
+tooltip | TN | 19 | ext
+desktop | TN | 19 | ext
+home screen | TN | 19 | ext
+taskbar | TN | 19 | ext
+start menu | TN | 19 | ext
+keyboard shortcut | TN | 19 | ext
+function key | TN | 19 | ext
+notification | TN | 19 | ext
+pop-up window | TN | 19 | ext
+
+# ----------------------------------------------------- operations and monitoring
+
+outage | TN | 20 | ext
+uptime | TN | 7 | ext
+downtime | TN | 7 | ext
+response time | TN | 7 | ext
+error rate | TN | 7 | ext
+failure rate | TN | 7 | ext
+shutdown | TN | 7 | std
+threshold | TN | 7 | ext
+alert threshold | TN | 7 | ext
+metric | TN | 7 | ext
+alert | TN | 19 | ext; general verb sense not approved, use tell (v)
+dashboard | TN | 19 | ext
+health check | TN | 19 | ext
+event log | TN | 19 | ext
+log file | TN | 19 | ext; the verb "log" is not approved, use record (v)
+log entry | TN | 19 | ext
+batch job | TN | 19 | ext; general noun sense of "job" not approved, use task (n)
+scheduled task | TN | 19 | ext
+failover | TN | 19 | ext
+disaster recovery | TN | 20 | ext
+maintenance window | TN | 5 | ext
+exit code | TN | 19 | ext
+error code | TN | 19 | ext
+status code | TN | 19 | ext
+error message | TN | 19 | ext
+exception | TN | 19 | ext
+stack trace | TN | 19 | ext
+memory leak | TN | 19 | ext
+status | TN | 19 | ext
+
+# --------------------------------------------------------------- roles
+
+operator | TN | 11 | std
+manufacturer | TN | 11 | std
+administrator | TN | 11 | ext
+system administrator | TN | 11 | ext
+developer | TN | 11 | ext
+tester | TN | 11 | ext
+maintainer | TN | 11 | ext
+vendor | TN | 11 | ext
+release manager | TN | 11 | ext
+support engineer | TN | 11 | ext
+end user | TN | 20 | std
+customer | TN | 20 | std
+customer support | TN | 20 | std
+customer service | TN | 20 | std
+contractor | TN | 20 | std
+help desk | TN | 20 | ext
+
+# ------------------------------------------------------------- documents
+
+warning | TN | 15 | std
+caution | TN | 15 | std
+danger | TN | 15 | std; general noun sense not approved, use risk (n)
+note | TN | 15 | std
+notice | TN | 15 | std
+prerequisite | TN | 15 | std
+reference | TN | 15 | std; general noun sense not approved, use refer (v) in general text
+checklist | TN | 15 | std
+test procedure | TN | 15 | std
+diagram | TN | 15 | std
+figure | TN | 15 | std
+table | TN | 15 | std
+section | TN | 15 | std
+chapter | TN | 15 | std
+page | TN | 15 | std
+user manual | TN | 15 | ext; compound of the std term "manual"
+user guide | TN | 15 | ext
+API reference | TN | 15 | ext
+installation guide | TN | 15 | ext
+administrator guide | TN | 15 | ext
+troubleshooting guide | TN | 15 | ext
+runbook | TN | 15 | ext
+tutorial | TN | 15 | ext
+release note | TN | 15 | ext
+license agreement | TN | 21 | ext
+
+# ------------------------------------------------------- measures and units
+
+byte | TN | 9 | ext
+bit | TN | 9 | ext
+kilobyte | TN | 9 | ext
+megabyte | TN | 9 | ext
+gigabyte | TN | 9 | ext
+terabyte | TN | 9 | ext
+millisecond | TN | 9 | ext
+second | TN | 9 | std
+minute | TN | 9 | std
+hour | TN | 9 | std
+
+# ------------------------------------------------- verbs: input and output (2a)
+
+click | TV | 2a | std; general verb sense not approved, the noun "click" is approved
+digitize | TV | 2a | std
+enter | TV | 2a | std; general sense not approved, dictionary alternative record (v)
+press | TV | 2a | std; general sense not approved, use push (v) for a physical force
+print | TV | 2a | std
+swipe | TV | 2a | std
+type | TV | 2a | std; the noun "type" is approved, the verb is not
+
+# ----------------------------------- verbs: user interface and applications (2b)
+
+clear | TV | 2b | std; general sense not approved, the adjective "clear" is approved
+copy | TV | 2b | std; general verb sense not approved
+cut | TV | 2b | std; the approved verb "cut" means divide, a different sense
+delete | TV | 2b | std; general sense not approved, use erase (v) for removing data from a medium, use remove (v) otherwise
+deselect | TV | 2b | std; general sense not approved, use cancel (v)
+disable | TV | 2b | std; prefer deactivate (v) where it gives the same instruction
+drag | TV | 2b | std; general sense not approved, use pull (v) only for a physical force
+drag and drop | TV | 2b | std
+enable | TV | 2b | std; prefer activate (v) where it gives the same instruction
+encrypt | TV | 2b | std
+filter | TV | 2b | std
+highlight | TV | 2b | std
+invalidate | TV | 2b | std
+maximize | TV | 2b | std
+minimize | TV | 2b | std
+navigate | TV | 2b | std; prefer go to where it gives the same instruction
+paste | TV | 2b | std
+save | TV | 2b | std; general sense not approved, use keep (v)
+scroll | TV | 2b | std
+sort | TV | 2b | std
+store | TV | 2b | std; general sense not approved, use keep (v) or contain (v)
+validate | TV | 2b | std
+zoom in | TV | 2b | std
+zoom out | TV | 2b | std
+search | TV | 2b | ext; general sense not approved, the dictionary verb examine (v) has another meaning
+log in | TV | 2b | ext; synonym of "sign in", use one
+log out | TV | 2b | ext; synonym of "sign out", use one
+sign in | TV | 2b | ext; synonym of "log in", use one
+sign out | TV | 2b | ext; synonym of "log out", use one
+
+# ------------------------------------------------------ verbs: system operations (2c)
+
+abort | TV | 2c | std
+boot | TV | 2c | std
+communicate | TV | 2c | std; general sense not approved, dictionary alternative contact (v)
+debug | TV | 2c | std
+download | TV | 2c | std
+format | TV | 2c | std
+load | TV | 2c | std; general sense not approved, use install (v) for placing software
+manage | TV | 2c | std
+process | TV | 2c | std; general verb sense not approved, use do (v)
+reboot | TV | 2c | std
+update | TV | 2c | std
+upgrade | TV | 2c | std
+upload | TV | 2c | std
+commit | TV | 2c | ext
+merge | TV | 2c | ext
+roll back | TV | 2c | ext
+back up | TV | 2c | ext; the noun "backup" is listed separately
+restore | TV | 2c | ext; general sense not approved, use put (v) or repair (v), not equivalent
+restart | TV | 2c | ext; prefer start again (both approved) where it gives the same instruction
+reset | TV | 2c | ext; general sense not approved, use set (v), not equivalent for devices
+shut down | TV | 2c | ext; prefer stop (v), which is approved
+power on | TV | 2c | ext; prefer start (v) where it gives the same instruction
+power off | TV | 2c | ext; prefer stop (v) where it gives the same instruction
+mount | TV | 2c | ext; general sense not approved, use install (v) or attach (v)
+unmount | TV | 2c | ext
+uninstall | TV | 2c | ext
+deploy | TV | 2c | ext; the approved verb deploy has a military sense only
+synchronize | TV | 2c | ext
+configure | TV | 2c | ext
+compile | TV | 2c | ext; general sense not approved, the approved verbs record and collect are not equivalent
+build | TV | 2c | ext; general verb sense not approved, use assemble (v) only for physical parts
+test | TV | 2c | ext; the approved noun "test" is used with do, the verb form is not approved
+execute | TV | 2c | ext; general sense not approved, use do (v)
+run | TV | 2c | ext; general sense not approved, use operate (v)
+allocate | TV | 2c | ext; general sense not approved, use give (v)
+authenticate | TV | 2c | ext
+extract | TV | 2c | ext; the same word is std in category 3f (energy and gas), general sense not approved, use remove (v)
+import | TV | 2c | ext
+export | TV | 2c | ext
+query | TV | 2c | ext
+fail over | TV | 2c | ext
+
+# ----------------------------------------------------------------------------
+# approved words, no entry needed (their approved sense covers the software use)
+#   verbs: close, open, select, start, stop, connect, disconnect, send, record,
+#          monitor, install, erase, attach, compress, activate, deactivate,
+#          release, cancel, make sure, try, again, go, remove, keep, write, tap,
+#          verify (use make sure), retry (use try again), detach (use disconnect),
+#          reconnect (use connect again), terminate (use stop), kill (use stop),
+#          log (use record), reinstall (use install again), sync (informal, use
+#          synchronize), attach
+#   nouns: interface, display, data, error, exit, access, task, incident,
+#          maintenance, test, procedure, step, method, row, group, copy, paste,
+#          volume (plain noun; the compound "storage volume" is not listed),
+#          patch (plain noun; "software patch" is listed), manual (plain noun)
+#   "tap" is an approved verb meaning to hit lightly and quickly, so it is not listed as a technical verb.
+#
+# jargon and slang, and the proper term to use instead (rule 1.10)
+#   bug                -> defect (category 7)
+#   repo               -> repository
+#   prod, production   -> production environment
+#   config             -> configuration, configuration file
+#   app                -> application
+#   creds              -> credentials
+#   sync               -> synchronize
+#   kill (a process)   -> stop
+#   terminate          -> stop
+#   bounce (a service) -> restart
+#   nuke, wipe         -> erase, delete
+#   brick (a device)   -> set to OFF, or describe the result
+#   gear (equipment)   -> tools and equipment
+#   hotfix             -> software patch
+#   whitelist          -> allowlist
+#   blacklist          -> blocklist
+#   cron job           -> scheduled task
+#   spin up            -> start, provision
+#   repo-based terms, pod, and similar platform names are not listed; use the generic term
+#
+# terms considered and not listed for other reasons
+#   tweet (std 2b and 19) is social media, not used in software documentation
+#   crash (verb) is informal in software text, use stop responding or fail
+#   spam, quarantine as a verb, and sleep/wake are informal or not needed
+#   fail (verb) is not approved, use failure (n) or fail over for the system case
+#   click or tap as a noun form, log as a noun, and sign-on forms are left to the company term base

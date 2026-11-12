@@ -5,7 +5,7 @@ This procedure is for the hydraulic return filter on the GX-40 press.
 ## Stop the press and let the oil become cool
 
 1. Stop the press.
-2. Isolate the press and attach a lockout device.
+2. Isolate the press with a lockout device.
 3. Let the oil become cool for approximately 10 minutes.
 
 ## Remove the old filter element
@@ -35,13 +35,13 @@ This procedure is for the hydraulic return filter on the GX-40 press.
 15. Put the new filter element in the filter housing.
 16. Apply a small amount of clean hydraulic oil to the new O-ring.
 
-NOTE: Without oil, the O-ring can pinch when you install it.
+NOTE: Without oil, the O-ring can become damaged when you install it.
 
 17. Install the new O-ring.
 18. Install the filter housing.
 19. Install the four housing bolts.
 
-**CAUTION:** DO NOT TIGHTEN THE BOLTS TOO MUCH. THE FILTER HOUSING IS MADE OF ALUMINUM AND THE THREADS CAN BE DAMAGED.
+**CAUTION:** DO NOT TIGHTEN THE BOLTS TOO MUCH. THE FILTER HOUSING IS MADE OF ALUMINUM. THIS CAN CAUSE DAMAGE TO THE THREADS.
 
 20. Tighten the four housing bolts to 35 Nm in a cross pattern.
 
